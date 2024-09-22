@@ -34,7 +34,7 @@
   "anchors": [
     {
       "name": "Documentation",
-      "icon": "book-open-cover",
+      "icon": "books",
       "url": "https://mintlify.com/docs"
     },
     {
@@ -55,7 +55,7 @@
         "introduction",
         "quickstart",
         "development",
-        "Kudos Corner"
+        "pages/kudos"
       ]
     },
     {
