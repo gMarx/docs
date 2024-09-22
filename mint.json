@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Gary's Test",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -16,7 +16,7 @@
     }
   },
   "topbarLinks": [
-    {
+    { 
       "name": "Support",
       "url": "mailto:hi@mintlify.com"
     }
@@ -54,7 +54,8 @@
       "pages": [
         "introduction",
         "quickstart",
-        "development"
+        "development",
+        "Kudos Corner"
       ]
     },
     {
