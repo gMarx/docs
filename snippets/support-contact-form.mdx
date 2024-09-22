@@ -1,32 +1,20 @@
+## Send a ticket to support
 Support hours are Monday-Friday 9 a.m. - 5 p.m. PST
 
 If you’re encountering an issue and need assistance, please fill out the form below.
 
-<form method="POST" action="/support/submit" onSubmit={(e) => {
-  e.preventDefault();
-  const formData = new FormData(e.target);
-  console.log(Object.fromEntries(formData.entries())); // Handle form submission logic here
-  alert('Form submitted!');
-}}>
-  <div>
-    <label htmlFor="email">Email:</label><br/>
-    <input type="email" id="email" name="email" placeholder="your.email@example.com" required/><br/><br/>
-  </div>
+<form method="POST" action="/support/submit">
+  <label for="email">Email:</label><br/>
+  <input type="email" id="email" name="email" placeholder="your.email@example.com" required/><br/><br/>
 
-  <div>
-    <label htmlFor="description">Description of the Problem:</label><br/>
-    <textarea id="description" name="description" rows="5" placeholder="Please describe the issue you're facing" required></textarea><br/><br/>
-  </div>
+  <label for="description">Description of the Problem:</label><br/>
+  <textarea id="description" name="description" rows="10" placeholder="Please describe the issue you're facing" required></textarea><br/><br/>
 
-  <div>
-    <label htmlFor="screenshots">Upload Screenshots:</label><br/>
-    <input type="file" id="screenshots" name="screenshots" accept="image/*" multiple/><br/><br/>
-  </div>
+  <label for="screenshots">Upload Screenshots:</label><br/>
+  <input type="file" id="screenshots" name="screenshots" accept="image/*" multiple/><br/><br/>
 
-  <div>
-    <input type="checkbox" id="urgent" name="urgent"/>
-    <label htmlFor="urgent">Mark as Urgent</label><br/><br/>
-  </div>
+  <input type="checkbox" id="urgent" name="urgent"/>
+  <label for="urgent">Mark as Urgent</label><br/><br/>
 
   <button type="submit">Submit</button>
 </form>
